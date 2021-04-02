@@ -1,0 +1,197 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+    body {
+        background-image: url("./bg.jpg");
+        background-size: cover;
+    }
+    
+    pre {
+        font-size: 20px;
+    }
+    
+    div {
+        background-color: aliceblue;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #111;
+    }
+    
+    caption {
+        padding-bottom: 20px;
+        font-size: 20;
+    }
+    
+    span {
+        font-size: 17px;
+        padding-left: 250px;
+    }
+    /* input{
+    height: 20px;
+} */
+    
+    input[type=text],
+    input[type=date],
+    input[type=number],
+    input[type=email] {
+        width: 200px;
+        height: 35px;
+        border-radius: 0px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        padding-left: 10px;
+        transition: 0.3s;
+    }
+    
+    input::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+    
+    button {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+</style>
+
+<body style="font-family:Sans-serif">
+
+    <ul>
+
+
+        <li><a href="./Home.html">K M C H</a></li>
+        <li><a href="./PatientInfo.html">Patient Info</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="https://www.kmchhospitals.com">Official KMCH </a></li>
+    </ul>
+    <br><br><br>
+    <div>
+        <form>
+            <br><br>
+            <center>
+                <h1><u>Patient Information</u></h1>
+            </center><br><br>
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td><span>Name  &nbsp;&nbsp;</span></td>
+                        <td><input type="text" placeholder="Name" required></td>
+
+                    </tr>
+                    <tr>
+
+                        <td><span>Age  &nbsp;&nbsp;</span></td>
+                        <td><input type="number" placeholder="Age" max="120" required></td>
+
+                    </tr>
+                    <tr>
+
+                        <td><span>Date of Birth  &nbsp;&nbsp;</span></td>
+                        <td><input type="date" placeholder="Date of birth" required></td>
+
+                    </tr>
+                    <tr>
+
+                        <td><span>Phone  &nbsp;&nbsp;</span></td>
+                        <td><input type="number" placeholder="Phone no" maxlength="10" required></td>
+
+                    </tr>
+                    <tr>
+
+                        <td><span>Email  &nbsp;&nbsp;</span></td>
+                        <td><input type="email" placeholder="email" required></td>
+
+                    </tr>
+                    <tr>
+
+                        <td><span>City  &nbsp;&nbsp;</span></td>
+                        <td><input type="text" placeholder="city" required></td>
+
+                    </tr>
+                    <tr>
+
+                        <td><span>Gender  &nbsp;&nbsp;</span></td>
+                        <td><input type="radio" id="male" name="gender" required>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label><br>
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td><span>Marital Status  &nbsp;&nbsp;</span></td>
+                        <td><select id="Mstatus" style="width: 200px;height: 25px;" required> 
+                <option value="">Select</option>
+                <option value="Married">Married</option>
+                <option value="Unmarried">Unmarried</option>
+              </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td><span>Address  &nbsp;&nbsp;</span></td>
+                        <td><textarea rows="3" cols="40" required>
+               
+                </textarea>
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td><span>Health Issues  &nbsp;&nbsp;</span></td>
+                        <td><input type="text" required>
+                        </td>
+
+                    </tr>
+
+
+
+
+                </tbody>
+            </table>
+            <br><br>
+            <center><button type="submit">Submit</button></center>
+            <br>
+        </form>
+    </div>
+</body>
+
+</html>
